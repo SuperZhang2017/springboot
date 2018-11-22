@@ -29,7 +29,7 @@ public class EmpController {
         List<Emp> emps = empMapper.findAll();
 
         model.addAttribute("emps",emps);
-        System.out.println("122211");
+        //System.out.println("122211");
         return "listEmp";
 
     }
