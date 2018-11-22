@@ -12,16 +12,10 @@ import java.util.List;
 @RequestMapping("/emp")
 @Controller
 public class EmpController {
+
     @Autowired
-    protected EmpMapper empMapper;
+    private EmpMapper empMapper;
 
-    public EmpMapper getEmpMapper() {
-        return empMapper;
-    }
-
-    public void setEmpMapper(EmpMapper empMapper) {
-        this.empMapper = empMapper;
-    }
 
     @RequestMapping("/listEmp")
     public String listEmp(Model model){
