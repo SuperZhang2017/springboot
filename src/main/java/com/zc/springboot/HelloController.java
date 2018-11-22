@@ -14,7 +14,6 @@ import java.util.Date;
 @Controller
 public class HelloController {
 
-
     @RequestMapping("/hello")
     public String hello(Model model){
          model.addAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
