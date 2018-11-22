@@ -12,7 +12,6 @@
          <td>birthDay</td>
      </tr>
      <c:forEach items="${emps}" var="s" varStatus="st">
-
          <tr>
              <td>${s.id}</td>
              <td>${s.name}</td>
@@ -20,8 +19,6 @@
              <td>${s.sex}</td>
              <td>${s.birthDay}</td>
          </tr>
-
-
      </c:forEach>
 
 
