@@ -5,20 +5,30 @@ spring:
       prefix: /WEB-INF/views/
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/hello?characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: superzhang
-    driver-class-name: com.mysql.jdbc.Driver
-
-  devtools:
-    restart:
-      enabled: true
-
-
-
-
-
-
-
-
-
+---
+spring:
+  profiles:
+    active: test
+---
+#dev enviroment
+spring:
+  profiles: dev
+server:
+  port: 8080
+  jdbc:
+    username:
+    password:
+---
+#test enviroment
+spring:
+  profiles: test
+  jdbc:
+    username:
+    password:
+server:
+  port: 8081
+---
 

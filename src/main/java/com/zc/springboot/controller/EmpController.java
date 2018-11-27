@@ -24,6 +24,7 @@ public class EmpController {
 
         model.addAttribute("emps",emps);
 
+        System.out.println("hello");
         return "listEmp";
 
     }
